@@ -2,8 +2,7 @@
 
 namespace SimCorp.IMS.Lab1 {
     public abstract class KeyboardAttribute {
-        private List<Button> vButtons;
-        public abstract List<Button> Buttons { get; set; }
+        public abstract List<Layout> Layouts { get; }
         public abstract void Push(IInput input);
     }
 }

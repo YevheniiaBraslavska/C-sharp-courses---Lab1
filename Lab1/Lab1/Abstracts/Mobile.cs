@@ -3,22 +3,18 @@ using System.Text;
 
 namespace SimCorp.IMS.Lab1 {
     public abstract class Mobile {
-        private readonly ScreenAttribute vScreen;
         public abstract ScreenAttribute Screen {
             get;
         }
 
-        private readonly KeyboardAttribute vKeyboard;
         public abstract KeyboardAttribute Keyboard {
             get;
         }
 
-        private readonly BatteryAttribute vBattery;
         public abstract BatteryAttribute Battery {
             get;
         }
 
-        private readonly SlotAttribute vSlot;
         public abstract SlotAttribute Slot {
             get;
         }
@@ -27,7 +23,7 @@ namespace SimCorp.IMS.Lab1 {
             Screen.Show(screenImage);
         }
 
-        public string GetDescription() {
+        public override string ToString() {
             var descriptionBuilder = new StringBuilder();
             descriptionBuilder.AppendLine($"Screen Type: {Screen.ToString()}");
             descriptionBuilder.AppendLine($"Keyboard Type: {Keyboard.ToString()}");

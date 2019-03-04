@@ -8,7 +8,7 @@ namespace SimCorp.IMS.Lab1 {
     class Program {
         static void Main(string[] args) {
             SimCorpMobile Mobile = new SimCorpMobile();
-            Console.WriteLine(Mobile.GetDescription());
+            Console.WriteLine(Mobile);
             Console.ReadKey();
         }
     }

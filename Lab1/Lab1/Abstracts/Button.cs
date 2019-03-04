@@ -8,9 +8,16 @@ namespace SimCorp.IMS.Lab1 {
             get {
                 return vValues;
             }
-            set {
-                vValues = value;
-            }
+        }
+
+        public Button(char set) {
+            vValues = new List<char>() {
+                set
+            };
+        }
+
+        public Button(List<char> set) {
+            vValues = new List<char>(set);
         }
     }
 }

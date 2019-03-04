@@ -42,28 +42,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BatteryAttribute.cs" />
-    <Compile Include="Button.cs" />
-    <Compile Include="IInput.cs" />
-    <Compile Include="IScreenImage.cs" />
-    <Compile Include="KeyboardAttribute.cs" />
-    <Compile Include="LithiumIonBattery.cs" />
-    <Compile Include="Mobile.cs" />
-    <Compile Include="MultyTouchScreen.cs" />
-    <Compile Include="NickelMetalHydrideBattery.cs" />
-    <Compile Include="OnScreenKeyboard.cs" />
-    <Compile Include="PhisicalKeyboard.cs" />
+    <Compile Include="Battery\BatteryAttribute.cs" />
+    <Compile Include="Abstracts\Button.cs" />
+    <Compile Include="Interfaces\IInput.cs" />
+    <Compile Include="Interfaces\IScreenImage.cs" />
+    <Compile Include="Keyboard\KeyboardAttribute.cs" />
+    <Compile Include="Abstracts\Layout.cs" />
+    <Compile Include="Abstracts\Mobile.cs" />
+    <Compile Include="Screen\MultyTouchScreen.cs" />
+    <Compile Include="Keyboard\OnScreenKeyboard.cs" />
+    <Compile Include="Keyboard\PhisicalKeyboard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScreenAttribute.cs" />
-    <Compile Include="SDCardSlot.cs" />
-    <Compile Include="SimCardSlot.cs" />
+    <Compile Include="Screen\ScreenAttribute.cs" />
+    <Compile Include="Slot\SDCardSlot.cs" />
+    <Compile Include="Slot\SimCardSlot.cs" />
     <Compile Include="SimCorpMobile.cs" />
-    <Compile Include="SingleTouchScreen.cs" />
-    <Compile Include="SlotAttribute.cs" />
+    <Compile Include="Screen\SingleTouchScreen.cs" />
+    <Compile Include="Slot\SlotAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

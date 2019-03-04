@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace SimCorp.IMS.Lab1 {
     public class PhisicalKeyboard : KeyboardAttribute {
-        public override List<Button> Buttons { get; set; }
+        public override List<Layout> Layouts { get; }
+
+        public PhisicalKeyboard(Layout layout) {
+            Layouts = new List<Layout>() {
+                layout
+            };
+        }
 
         public override void Push(IInput input) {
         }

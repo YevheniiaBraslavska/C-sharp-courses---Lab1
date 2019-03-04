@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace SimCorp.IMS.Lab1 {
     public class OnScreenKeyboard : KeyboardAttribute {
-        public override List<Button> Buttons { get; set; }
+        public override List<Layout> Layouts { get; }
+
+        public OnScreenKeyboard(List<Layout> layouts) {
+            Layouts = new List<Layout>(layouts);
+        }
 
         public override void Push(IInput input) {
+            //Input with touching
+        }
+
+        public void Slide(IInput input) {
+            //Input with sliding across keyboard
         }
 
         public override string ToString() {

@@ -16,6 +16,10 @@ namespace SimCorp.IMS.Lab1 {
             }
         }
 
+        public MultyTouchScreen(int maxTouches) {
+            vMaxTouches = maxTouches;
+        }
+
         public override void Touch() {
             base.Touch();
         }

@@ -8,7 +8,7 @@ namespace SimCorp.IMS.Lab1 {
     public class SingleTouchScreen : ScreenAttribute{
         public override int Height { get; set; }
         public override int Width { get; set; }
-        public override int Pixels { get; set; }
+        public override int DPI { get; set; }
 
         public virtual void Touch() {           
         }
